@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spirit Grilled Cheese</title>
+
+  <link rel="icon" type="image/png" href="./assets/icons/cheeseStack.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+
+
+  <header class="header">
+    <div class="header__wrapper">
+      <div class="quizHeader">
+        <h2 class="header__heading">Your <span class="header__specialHeading">Spirit</span></h2>
+        <h2 class="header__subHeading">Grilled Cheese</h2>
+      </div>
+      <div class="answerHeader">
+        <h2 class="header__heading">Your <span class="header__specialHeading">spirit</span> grilled cheese...</h2>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="main__wrapper">
+
+      <div class="answer">
+        
+          <div class="answer__gcTitleContainer">
+        
+            
+          </div>
+
+          <div class="answer__imageContainer">
+            <img src="./assets/images/original.jpg">
+            
+          </div>
+
+          <div class="answer__description">
+          
+          </div>
+
+          <button class="resetButton"><p>Take quiz again!</p></button>
+      </div><!-- end answer -->
+
+
+      <div class="main__formContainer">
+        <form action="" class="form">
+          <div class="questionGroup1">
+
+            <h3 class="form__questionHeading">Do you describe yourself as...</h3>
+                    
+            <radiogroup id="personality" class="form__radioGroup question1 clearfix">
+              <input id="homeBody" type="radio" class="radioGroup__radioButton" data-score="0" name="personality">
+              <label for="homeBody" class="radioGroup__label"> Home Body</label>
+              
+              <input id="cityPerson" type="radio" class="radioGroup__radioButton" data-score="1" name="personality">
+              <label for="cityPerson" class="radioGroup__label">City Person</label>
+              
+              <input id="adventureSeeker" data-score="2" type="radio" class="radioGroup__radioButton" name="personality">
+
+              <label for="adventureSeeker" class="radioGroup__label">Adventure Seeker</label>
+            </radiogroup>
+          </div>
+          <div class="questionGroup2">
+            <h3 class="form__questionHeading">What kind of food do you like?</h3>
+            <radiogroup id="health" class="form__radioGroup question clearfix">
+              <input data-score="0" type="radio" id="fastFood" name="health" class="radioGroup__radioButton">
+              <label for="fastFood" class="radioGroup__label">Fast Food</label>
+              <input data-score="1" type="radio" id="locallyGrown" name="health" class="radioGroup__radioButton">
+              <label for="locallyGrown" class="radioGroup__label">Locally Grown</label>
+              <input data-score="2" type="radio" id="worldFlavors" name="health" class="radioGroup__radioButton">
+              <label for="worldFlavors" class="radioGroup__label">world flavors</label>
+              <i class="backButton fa fa-arrow-circle-o-left"></i>
+            </radiogroup>
+          </div>
+
+          <div class="questionGroup3">
+          <h3 class="form__questionHeading">When choosing clothes...</h3>
+
+            <radiogroup id="" class="form__radioGroup question clearfix">
+              <input data-score="0" type="radio" id="neutralColors" name="fashion" class="radioGroup__radioButton">
+              <label for="neutralColors" class="radioGroup__label">Neutral Colours</label>
+              <input data-score="1" type="radio" id="extremeLayers" name="fashion" class="radioGroup__radioButton">
+              <label for="extremeLayers" class="radioGroup__label">Extreme Layers</label>
+              <input data-score="2" type="radio" id="edgyPatterns" name="fashion" class="radioGroup__radioButton">
+              <label for="edgyPatterns" class="radioGroup__label">Edgy Patterns</label>
+              <i class="backButton fa fa-arrow-circle-o-left"></i>
+            </radiogroup>
+          </div>
+
+          <div class="questionGroup4">
+            <h3 class="form__questionHeading">Your Ideal drink is...</h3>
+            <radiogroup id="" class="form__radioGroup question clearfix">
+              <input data-score="0" type="radio" id="soda" name="drink" class="radioGroup__radioButton">
+              <label for="soda" class="radioGroup__label">Something Fizzy</label>
+              <input data-score="1" type="radio" id="smoothieShake" name="drink" class="radioGroup__radioButton">
+              <label for="smoothieShake" class="radioGroup__label"> Smoothie/shake</label>
+              <input data-score="2" type="radio" id="wineCocktail" name="drink" class="radioGroup__radioButton">
+              <label for="wineCocktail" class="radioGroup__label">Wine/cocktail</label>
+              <i class="backButton fa fa-arrow-circle-o-left"></i>
+            </radiogroup>
+          </div>
+
+          <div class="questionGroup5">
+            <h3 class="form__questionHeading">My favourite music is...</h3>
+            <radiogroup id="" class="form__radioGroup question clearfix">
+              <input data-score="0" type="radio" id="classics" name="music" class="radioGroup__radioButton">
+              <label for="classics" class="radioGroup__label">The Classics</label>
+              <input data-score="1" type="radio" id="modern" name="music" class="radioGroup__radioButton">
+              <label for="modern" class="radioGroup__label">Modern/top40</label>
+              <input  data-score="2" type="radio" id="international" name="music" class="radioGroup__radioButton">
+              <label for="international" class="radioGroup__label">World/Classical</label>
+              <i class="backButton fa fa-arrow-circle-o-left"></i>
+            </radiogroup>
+          </div>
+
+          <div class="questionGroup6">
+            <h3 class="form__questionHeading">In life I'm generally...</h3>
+            <radiogroup id="" class="form__radioGroup question clearfix">
+              <input data-score="0" type="radio" id="laidBack" name="lifestyle" class="radioGroup__radioButton">
+              <label for="laidBack" class="radioGroup__label">really laid back</label>
+              <input data-score="1" type="radio" id="onTheMove" name="lifestyle" class="radioGroup__radioButton">
+              <label for="onTheMove" class="radioGroup__label">on the move</label>
+              <input data-score="2" type="radio" id="stepsAhead" name="lifestyle" class="radioGroup__radioButton">
+              <label for="stepsAhead" class="radioGroup__label">5 steps ahead</label>
+              <i class="backButton fa fa-arrow-circle-o-left"></i>
+            </radiogroup>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer> 
+    
+  </footer>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+    ga('create', 'UA-73822160-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script src="js/gcDatabase.js"></script>
+  <script src='js/app.js'></script>
+</body>
+</html>
